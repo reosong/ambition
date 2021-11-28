@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/song-yeongseo/Desktop/workspace/java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+573857008.index
+2541260230.index
+1449250516.index
+1956481609.index
+2648485174.index
+804511417.index
+1639753700.index

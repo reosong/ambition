@@ -1,0 +1,5 @@
+package Interface08.Sample;
+
+public interface RemoteComtrol {
+
+}

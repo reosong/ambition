@@ -1,0 +1,33 @@
+package testtttt.aloneJava;
+
+public class OrderExam {
+
+	public static void main(String[] args) {
+		
+
+		Order show = new Order();
+		
+		System.out.println(show.date);
+		System.out.println(show.id);
+		System.out.println(show.location);
+		System.out.println(show.name);
+		System.out.println(show.num);
+		System.out.println(show.product);
+		
+		
+		Order production = null;
+		
+		production.date="2021";
+		production.id= "eqr";
+		
+		
+		
+		System.out.println(production.date);
+		System.out.println(production.location);
+		
+		
+		
+		
+	}
+
+}

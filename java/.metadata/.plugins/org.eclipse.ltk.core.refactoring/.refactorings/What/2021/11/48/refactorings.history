@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;youngsinsa.member.memberDTO&apos; to &apos;MemberDTO&apos;&#x0A;- Original project: &apos;What&apos;&#x0A;- Original element: &apos;youngsinsa.member.memberDTO&apos;&#x0A;- Renamed element: &apos;youngsinsa.member.MemberDTO&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;memberDTO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;youngsinsa.member{memberDTO.java[memberDTO" matchStrategy="1" name="MemberDTO" qualified="false" references="true" similarDeclarations="false" stamp="1637639814947" textual="false" version="1.0"/>
+</session>

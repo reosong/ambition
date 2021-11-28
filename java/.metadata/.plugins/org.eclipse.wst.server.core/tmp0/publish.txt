@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Nov 26 11:04:57 KST 2021
+org.eclipse.jst.jee.server\:gogo=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/gogo
+org.eclipse.jst.jee.server\:servletMappingtest=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/servletMappingtest

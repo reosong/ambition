@@ -1,0 +1,33 @@
+package testtttt.aloneJava;
+
+public class Person {
+	String personName;
+	int personAge;
+	boolean marry;
+	int child;
+	
+	public static void main(String[] args) {
+		
+
+		Person james = new Person();
+		
+		james.personAge = 40;
+		james.personName = "song";
+		james.marry= true;
+		james.child= 3;
+		
+		
+		
+		System.out.println(james.personAge);
+		System.out.println(james.personName);
+		System.out.println(james.marry);
+		System.out.println(james.child);
+		
+		
+		
+		
+		
+		
+	}
+
+}

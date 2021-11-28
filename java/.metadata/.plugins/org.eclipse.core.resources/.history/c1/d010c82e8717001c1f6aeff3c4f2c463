@@ -1,0 +1,5 @@
+package Inheritance07.abstract_gamelevel;
+
+public class Player {
+
+}
