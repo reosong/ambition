@@ -7,3 +7,5 @@ INDEX VERSION 1.131
 /young/src/main/java
 /Users/song-yeongseo/Desktop/workspace/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3668283886.index
 /gogo/src/main/java
+/Users/song-yeongseo/Desktop/workspace/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1989820225.index
+/testProject_1/src/main/java
