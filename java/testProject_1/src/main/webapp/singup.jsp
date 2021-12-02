@@ -22,7 +22,7 @@
 	%>
 	
 	m_name = <%= m_name %> <br>
-	m_pass = <%= m_pass%> <br>
+	m_pass = <%= m_pass %> <br>
 	m_hobby = 
 	<%
 	for(int i =0; i<m_hobby.length; i++){

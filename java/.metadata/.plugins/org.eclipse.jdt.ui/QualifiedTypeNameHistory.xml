@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Inheritance07.abstract_gamelevel.playerLevel"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="Interface_08.lab04.Clac"/>
     <fullyQualifiedTypeName name="Inheritance07.AutoCar"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.Reader"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
 </qualifiedTypeNameHistroy>

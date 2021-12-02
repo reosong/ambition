@@ -20,6 +20,7 @@ public class EmpTest {
 		
 			System.out.println(eno +"  " +ename+"  "+ job  );
 			
+			testservlet t = new testsetvlet();
 			
 			
 			
