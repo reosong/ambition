@@ -7,6 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+Cookie[] cookies = request.getCookies();
+ System.out.println("cookies"+ cookies);
+ 
+ if(cookies != null){
+	 for(Cookies c : cookies){
+		 if(c.getName().equals("memberId")){
+			 response.sendRidirect("loginOk.jsp");
+		 }
+	 }
+ }
+
+%>
 	<form action="loginCon" method ="post">
 	 	id :<input type ="text" name ="mid"><br>
 	 	password :<input type ="password" name ="mpass"><br>
