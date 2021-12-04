@@ -7,14 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p> first page</p>
+<form action= "signup" method="post">
+이름 : <input type ="text" name ="m_name"> <br>
+별명 : <input type ="text" name = "m_nickname"> <br>
+<input type="submit" value = "sign up">
 
-<% 
-response.sendRedirect("secondpage.jsp");
-%>
-<!-- 
-forward는 주소값이 바뀌지 않음 
-sendreditect 는 주소값이 바뀜
- -->
+</form>
+
 </body>
 </html>

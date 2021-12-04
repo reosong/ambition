@@ -7,14 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p> first page</p>
 
-<% 
-response.sendRedirect("secondpage.jsp");
+<%
+session = request.getSession();
+out.print("memberId :" + session.getAttribute("memberId")+"<br>");
 %>
-<!-- 
-forward는 주소값이 바뀌지 않음 
-sendreditect 는 주소값이 바뀜
- -->
+
+<form action ="logoutCon" method ="post">
+<input type= "submit" value ="logout">
+</form>
+
 </body>
 </html>

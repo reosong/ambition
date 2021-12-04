@@ -19,6 +19,40 @@
   	<url-pattern>/se</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  <servlet-name>jspex</servlet-name>
+  <jsp-file>/jspex.jsp</jsp-file>
+  <init-param>
+  	<param-name>adminid</param-name>
+  	<param-value>admin</param-value>
+  </init-param>
+  <init-param>
+  	<param-name>adminpw</param-name>
+  	<param-value>1234</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>jspex</servlet-name>
+  <url-pattern>/jspex.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>imgDir</param-name>
+  	<param-value>/upload/img</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>testServletIP</param-name>
+  	<param-value>127.0.0.1</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-name>member</servlet-name>
+  <servlet-class>com.servlet.member</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>member</servlet-name>
+  <url-pattern>/mSignUp</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>

@@ -1,5 +1,4 @@
 #Tomcat publish data
-#Fri Dec 03 11:10:40 KST 2021
-org.eclipse.jst.jee.server\:testProject_1=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/testProject_1
+#Fri Dec 03 18:29:36 KST 2021
 org.eclipse.jst.jee.server\:pro1=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/pro1
-org.eclipse.jst.jee.server\:testfile=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/testfile
+org.eclipse.jst.jee.server\:ServletData=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/ServletData
