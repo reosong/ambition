@@ -37,8 +37,8 @@ public class member extends HttpServlet {
 			System.out.println(namet);
 		}
 	*/
-		//response.sendRedirect("http://ambition.dothome.co.kr");
-		response.sendRedirect("./main.html");
+		response.sendRedirect("http://ambition.dothome.co.kr");
+		//response.sendRedirect("./main.html");
 	
 	}
 
