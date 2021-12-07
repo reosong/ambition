@@ -9,7 +9,7 @@
 <body>
 <p> 안녕하세요~ </p>
  <script>
- location.href = "login.jsp";
+ location.href = "./login.jsp";
  
  </script>
 
