@@ -44,7 +44,6 @@ INDEX VERSION 1.131+/Users/song-yeongseo/Desktop/workspace/java/.metadata/.plugi
 4091242319.index
 1298701907.index
 4037294199.index
-395167259.index
 192870028.index
 1313160872.index
 2503238693.index
