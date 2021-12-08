@@ -81,7 +81,7 @@ public class BbsDao {
 			
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			
-			pstmt.setInt(1, getNext() -(pageNumber -1)*10);
+			pstmt.setInt(1,getNext() -(pageNumber -1)*10);
 			
 			rs = pstmt.executeQuery();
 			
@@ -121,30 +121,29 @@ public class BbsDao {
 		return false;
 	}
 	
-	public Bbs getBbs(int bbsID) {
-		String sql = "select * from bbs where bbsID = ? ";
-		try {
-			PreparedStatement pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, bbsID);
-			rs = pstmt.executeQuery();
-			if(rs.next()) {
-				Bbs bbs =new Bbs();
-				bbs.setBbsID(rs.getInt(1));
-				bbs.setBbsTitle(rs.getString(2));
-				bbs.setUserID(rs.getString(3));
-				bbs.setBbsDate(rs.getString(4));
-				bbs.setBbsContent(rs.getString(5));
-				bbs.setBbsAvailable(rs.getInt(6));
-				return bbs;
+	//하나의 게시글을 보는 메소드
+		public Bbs getBbs(int bbsID) {
+			String sql = "select * from bbs where bbsID = ?";
+			try {
+				PreparedStatement pstmt = con.prepareStatement(sql);
+				pstmt.setInt(1, bbsID);
+				rs = pstmt.executeQuery();
+				if(rs.next()) {
+					Bbs bbs = new Bbs();
+					bbs.setBbsID(rs.getInt(1));
+					bbs.setBbsTitle(rs.getString(2));
+					bbs.setUserID(rs.getString(3));
+					bbs.setBbsDate(rs.getString(4));
+					bbs.setBbsContent(rs.getString(5));
+					bbs.setBbsAvailable(rs.getInt(6));
+					return bbs;
+				}
+			}catch (Exception e) {
+				e.printStackTrace();
 			}
-			
-		}catch(Exception e) {
-			e.printStackTrace();
+			return null;
 		}
-		return null;
-		
-		
-	}
+	
 	
 	
 	
