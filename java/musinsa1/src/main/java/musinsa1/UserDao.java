@@ -1,11 +1,11 @@
-package musinsa;
+package musinsa1;
 
 import java.sql.*;
 
 public class UserDao {
 	
 	Connection con ;
-	Statement stmt;
+	PreparedStatement stmt;
 	ResultSet rs;
 	
 	//기본 생성자 생성과 동시에 db와 연결 
@@ -21,6 +21,23 @@ public class UserDao {
 		}catch(Exception e){
 			e.printStackTrace();	
 		}	
+	}
+	
+	public int join(User user) {
+		try {
+			String sql = "insert into users(id,password,email) VALUES(?,?,?)";
+			stmt = con.prepareStatement(sql);
+			
+			stmt.setString(1, user.getUserID());
+			stmt.setString(2, user.getUserPassword());
+			stmt.setString(3, user.getUserEmail());
+		
+			return stmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; // 디비 오
+		
 	}
 
 	
