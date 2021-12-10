@@ -11,7 +11,7 @@ public class UserDao {
 	//기본 생성자 생성과 동시에 db와 연결 
 	public UserDao() {
 		try {
-		String url ="jdbc:mysql://localhost:3306/users";
+		String url ="jdbc:mysql://localhost:3306/bbs";
 		String id ="root";
 		String pw ="1234";
 		Class.forName("com.mysql.jdbc.Driver");
@@ -36,7 +36,7 @@ public class UserDao {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // 디비 오
+		return -1; // 디비 오류 
 		
 	}
 

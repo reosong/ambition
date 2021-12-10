@@ -7,6 +7,9 @@ public class User {
 	private String userEmail;
 	private String userAddress;
 	private String userPhoneNumber;
+	
+	
+	
 	public String getUserID() {
 		return userID;
 	}

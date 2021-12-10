@@ -21,7 +21,7 @@
 
 <% 
 if(member.getUserID() == null || member.getUserPassword() == null ||
-member.getUserPasswordok() ==null ||member.getUserEmail() == null){
+member.getUserPasswordok() ==null || member.getUserEmail() == null){
 
 	out.println("<script>");
 	out.println("alert('입력이 안된 부분이 있습니다. ')");
