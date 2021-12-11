@@ -22,7 +22,7 @@
             <ul class="ul_left">
                 <li> 비밀번호</li>
                 <li class="li_margin"><input type="password" name="userPassword" id="input_password" placeholder="비밀번호(숫자 영문 특수문자 조합 최소 8자 이상) "></li>
-                <li><input type="password" id="input_password" name="UserPasswordok" placeholder="비밀번호 확인 "></li>
+                <li><input type="password" id="input_password" name="userPasswordok" placeholder="비밀번호 확인 "></li>
             </ul>
         </div>
         <div>

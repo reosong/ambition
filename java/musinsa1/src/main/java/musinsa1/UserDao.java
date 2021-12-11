@@ -41,6 +41,24 @@ public class UserDao {
 	}
 
 	
+	//아이디 중복확인 
+	public int idCheck(User user) {
+		try {
+			String sql = "select * form users where id = ?";
+			stmt = con.prepareStatement(sql);
+			
+			stmt.setString(1,user.getUserID());
+			rs = stmt.executeQuery();
+			
+			if(rs.next()) {
+					
+			}return -1;
+		
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
 	
 	
 	

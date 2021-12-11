@@ -32,8 +32,12 @@ member.getUserPasswordok() ==null || member.getUserEmail() == null){
 }else{
 	
 	if(member.getUserPassword().equals(member.getUserPasswordok())){
+	
+		UserDao userDao = new UserDao();
+		if(userDao.idCheck(member) != 0){
+			
 		
-	UserDao userDao = new UserDao();
+
 	int result = userDao.join(member);
 		if(result == 0){
 			out.println("<script>");
@@ -47,7 +51,12 @@ member.getUserPasswordok() ==null || member.getUserEmail() == null){
 			out.println("</script>");
 			
 		}
-	
+		}else{
+			out.println("<script>");
+			out.println("alert('해당 아이디가 이미 있습니다')");
+			out.println("history.back()");
+			out.println("</script>");
+		}
 	}else{
 		out.println("<script>");
 		out.println("alert('비밀번호를 확인해주세요')");
