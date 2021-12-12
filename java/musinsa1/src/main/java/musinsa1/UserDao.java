@@ -44,7 +44,7 @@ public class UserDao {
 	//아이디 중복확인 
 	public int idCheck(User user) {
 		try {
-			String sql = "select * form users where id = ?";
+			String sql = "select * from users where id = ?";
 			stmt = con.prepareStatement(sql);
 			
 			stmt.setString(1,user.getUserID());
@@ -61,6 +61,30 @@ public class UserDao {
 	}
 	
 	
+	//로그인 할때 비밀번호가 맞나 검사 
+	public int login(String userID, String userPassword) {
+		String sql = "select password from users where id = ?";
+		try {
+			stmt = con.prepareStatement(sql);
+			stmt.setString(1, userID);
+			
+			rs = stmt.executeQuery();
+			if(rs.next()) {
+				if(rs.getString(1).equals(userPassword)) {
+					return 1;
+				}else {
+					return 0;
+				}
+				
+			}return -1;
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return -2;
+		
+	}
 	
 	
 	

@@ -20,10 +20,15 @@
 
 
 <% 
-if(member.getUserID() == null || member.getUserPassword() == null ||
-member.getUserPasswordok() ==null || member.getUserEmail() == null){
+//UserDao userDao = new UserDao();
+//userDao.pirnt(member);
 
+if(member.getUserID() == null || member.getUserPassword() == null ||
+member.getUserPasswordok() == null || member.getUserEmail() == null){
+
+	
 	out.println("<script>");
+
 	out.println("alert('입력이 안된 부분이 있습니다. ')");
 	out.println("history.back()");
 	out.println("</script>");
