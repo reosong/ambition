@@ -93,7 +93,7 @@ if(session.getAttribute("userID")!= null){
         if(userID != null){
         %> 
         	<a href="login.jsp" class="no_line" style="color: black;"> 
-                    <%=userID %></a> 
+                    <%=userID %> 님</a> 
         <% 
         }else{
         %>	

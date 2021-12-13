@@ -1,9 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import ="musinsa1.DataDao"%>
-    <%@ page import ="musinsa1.Data"%>
-    <%@ page import ="java.sql.*" %>
-    <%@ page import ="java.util.*" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -22,14 +18,6 @@
 <link rel="stylesheet" href="css/costomer.css">
 </head>
 <body>
-
-<%
-String userID = null;
-if(session.getAttribute("userID")!= null){
-	userID = (String) session.getAttribute("userID");
-}
-
-%>
 
 
     <!--영신사 스토어 헤더  -->
@@ -71,18 +59,8 @@ if(session.getAttribute("userID")!= null){
     <header id="header_3">
         <ul>
             <li>
-                      <%
-        if(userID != null){
-        %> 
-        	<a href="login.jsp" class="no_line" style="color: black;"> 
-                    <%=userID %> 님</a> 
-        <% 
-        }else{
-        %>	
-        
-      	 <a href="login.jsp" class="no_line" style="color: black;"> 
-                    로그인</a>
-         <%} %>
+                <a href="../hhhh/login.html" class="no_line" style="color: black;"> 
+                    로그인</a> 
             </li>
             <li class="sky">바로접속 On</li>
             <li> <a href="../hhhh/menu1.html">알림</a></li>
@@ -160,43 +138,31 @@ if(session.getAttribute("userID")!= null){
     </aside>
     <main>
         <h1 id="title">고객 센터</h1>
-      
+      	<form action="writeAction.jsp" method ="post">
         <div id="list">
             <table>
             <thead class="table_list">
                 <tr>
-                    <th class="thead_th"> 번호 </th>
-                    <th class="thead_th_big"> 글 제목 </th>
-                    <th class="thead_th"> 작성자 </th>
-                    <th class="thead_th"> 작성일 </th>
+                    <th class="thead_th_long">글 보기 </th>
                 </tr>
             </thead>
 
 
             <tbody>
-		     <%
-		     DataDao dataDao = new DataDao();
-		     ArrayList<Data> list = dataDao.show();
-		     for(int i =0; i<list.size();i++){
-		    	 
-		     %>
+                
                 <tr>
-                    <th class="tbody_th"> <%= list.get(i).getDataCount() %></th>
-                    <th class="tbody_th_big"><%= list.get(i).getDataTitle() %> </th>
-                    <th class="tbody_th"> <%= list.get(i).getDataID() %> </th>
-                    <th class="tbody_th"> <%= list.get(i).getDataDate() %>  </th>
+                    <th class="text_th">  </th>
                 </tr>
-		
-			<%} %>
+                <tr>
+                    <th class="textarea_th"> <textarea name="dataContent"class="text_big" > </textarea> </th>
+                </tr>
             </tbody>
-
-
             </table>
         </div>
         <div>
-            <a href="write.jsp"><button id="button_gray">글쓰기</button></a>
+           <input type="submit" value="제출" id="button_gray">
         </div>
 
-
+    </form>
 
     </main>

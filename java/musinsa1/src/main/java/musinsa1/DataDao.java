@@ -5,9 +5,9 @@ import java.util.*;
 
 public class DataDao {
 
-	Connection con ;
+	Connection con =null;
 	//PreparedStatement stmt;
-	ResultSet rs;
+	ResultSet rs =null;
 	
 	//기본 생성자 생성과 동시에 db와 연결 
 	public DataDao() {
@@ -108,6 +108,28 @@ public class DataDao {
 		return arr;
 	}
 	
-	
+	public ArrayList<Data> content(int count) {
+		ArrayList<Data> arr = new ArrayList<Data>();
+		
+		
+		try {
+			String sql = "select title, content from costomer where count = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, count);
+			
+			rs = stmt.executeQuery();
+			Data data = new Data();
+			
+			data.setDataTitle(rs.getString(1));
+			data.setDataContent(rs.getString(2));
+			
+			arr.add(data);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		return arr;
+	}
 	
 }
