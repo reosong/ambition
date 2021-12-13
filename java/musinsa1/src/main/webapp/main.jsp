@@ -110,8 +110,8 @@ if(session.getAttribute("userID")!= null){
             <li><a href="./hhhh/menu4.html"> 좋아요</a></li>
             <li><a href="./hhhh/menu5.html">장바구니</a></li>
             <li><a href="./hhhh/menu6.html"> 주문배송조회</a></li>
-            <li><a href="./hhhh/menu7.html"> 고객센터 </a></li>
-            <li><a href="./hhhh/menu8.html">로그아웃</a></li>
+            <li><a href="costomer.jsp"> 고객센터 </a></li>
+            <li><a href="logout.jsp">로그아웃</a></li>
             <li class="sky"><a href="./hhhh/menu9.html"> 친구초대 EVENT</a></li>
         </ul>        
     </header>

@@ -10,7 +10,7 @@
 <body>
 <form action="memberAction.jsp" method="post">
     <div id="div_login">
-        <a href="../index.html"><div id="div_login2"> <b>YOUNGSINSA</b> </div></a>  
+        <a href="main.jsp"><div id="div_login2"> <b>YOUNGSINSA</b> </div></a>  
         <div id="div_id"> 
             <ul class="ul_left">
                 <li >아이디</li>
