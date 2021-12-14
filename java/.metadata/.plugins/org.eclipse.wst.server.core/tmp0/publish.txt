@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Mon Dec 13 19:14:21 KST 2021
+#Tue Dec 14 14:27:27 KST 2021
 org.eclipse.jst.jee.server\:Song=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/Song
 org.eclipse.jst.jee.server\:musinsa=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/musinsa
 org.eclipse.jst.jee.server\:musinsa1=/Users/song-yeongseo/apache-tomcat-8.5.73/apache-tomcat-8.5.61/wtpwebapps/musinsa1
