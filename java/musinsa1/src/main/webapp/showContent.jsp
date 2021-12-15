@@ -150,11 +150,12 @@
 
             <tbody>
                 
+                
                 <tr>
-                    <th class="text_th">  </th>
+                    <th class="text_th"><%= %></th>
                 </tr>
                 <tr>
-                    <th class="textarea_th"> <textarea name="dataContent"class="text_big" > </textarea> </th>
+                    <th class="textarea_th"> <textarea name="dataContent"class="text_big" >ㅈㄷ </textarea> </th>
                 </tr>
             </tbody>
             </table>
