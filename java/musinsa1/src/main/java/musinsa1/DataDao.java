@@ -132,4 +132,42 @@ public class DataDao {
 		return arr;
 	}
 	
+	
+	public Data getData(int count) {
+		Data data = new Data();
+		try {
+			String sql = "select id, title, content from costomer where count = ?";
+			PreparedStatement stmt =con.prepareStatement(sql);
+			stmt.setInt(1, count);
+			
+			rs =stmt.executeQuery();
+			while(rs.next()) {
+			data.setDataID(rs.getString(1));
+			data.setDataTitle(rs.getString(2));
+			data.setDataContent(rs.getString(3));
+			}
+		return data;
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		return null;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

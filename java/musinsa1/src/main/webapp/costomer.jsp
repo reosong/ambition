@@ -63,7 +63,8 @@ if(session.getAttribute("userID")!= null){
                 <tr>
                     <th class="tbody_th"> <%= list.get(i).getDataCount() %></th>
                     <th class="tbody_th_big">
-                    <form name="member" action="showContent.jsp"><%= list.get(i).getDataTitle() %> </form> 
+                    <a href = "showContent.jsp?dataCount=<%=list.get(i).getDataCount() %>">
+                    <%= list.get(i).getDataTitle() %> </a>
                     </th>
                     <th class="tbody_th"> <%= list.get(i).getDataID() %> </th>
                     <th class="tbody_th"> <%= list.get(i).getDataDate() %>  </th>

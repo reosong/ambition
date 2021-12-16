@@ -23,7 +23,7 @@
 
 <jsp:include page ="side.jsp"/>
 
-<!-- 메 -->
+<!-- 메인  -->
     <main>
         <h1 id="title">고객 센터</h1>
       	<form action="writeAction.jsp" method ="post">
