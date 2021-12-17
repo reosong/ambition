@@ -6,6 +6,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="login"/>
 			<item value="count"/>
 			<item value="bbsID"/>
 			<item value="bbdID"/>
@@ -13,7 +14,6 @@
 			<item value=".dropdown-menu "/>
 			<item value="drop-downmenu"/>
 			<item value=".active"/>
-			<item value="navbar-brand"/>
 		</list>
 		<list key="replacehistory">
 		</list>
