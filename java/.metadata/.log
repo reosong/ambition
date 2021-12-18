@@ -5289,3 +5289,10 @@ java.nio.file.FileSystemException: /Volumes/Eclipse/Eclipse.app/Contents/Info.pl
 	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.handleSchemes(RegistrationMacOsX.java:55)
 	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:94)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-12-18 18:15:47.608
+!MESSAGE [Info]	ESLint server running in node v14.15.4
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-12-18 18:15:48.276
+!MESSAGE [Error]	[tsserver] env: node: No such file or directory
+

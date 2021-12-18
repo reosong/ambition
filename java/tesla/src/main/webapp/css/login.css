@@ -7,12 +7,13 @@ margin-left: 30%;
 width: 500px;
 
 height: 1000px;
-background-color: white;
+background-color:black;
 }
 #div_login2{
 padding-top: 50px;
 font-size: 30px;
 font-family: 'te';
+color: white;
 
 }
 #div_member{
@@ -62,7 +63,7 @@ width: 400px;
 height: 50px;
 font-size: 20px;
 font-weight: bold;
-border-radius: 30px;
+border-radius: 10px;
 margin-top: 5px;
 }
 #kakao{
@@ -87,7 +88,7 @@ border: none;
 }
 
 @font-face {
-    src : url("TESLA.ttf"); 
+    src : url("./TESLA.ttf"); 
     font-family: "te";
 }
 

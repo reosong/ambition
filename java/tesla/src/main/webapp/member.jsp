@@ -14,7 +14,7 @@
 <body>
     <form action="memberAction.jsp" method="post">
     <div id="div_login">
-        <a href="../index.html"><div id="div_login2"> <b>T E S L A</b> </div></a>
+        <a href="index.jsp"><div id="div_login2"> <b>T E S L A</b> </div></a>
     
         
         <div id="div_id"> 
@@ -38,11 +38,10 @@
             </ul>
         </div>
         <div>
-            <ul class="ul_left">
+             <ul class="ul_left">
                 <li> <input type="checkbox" name="m_check1"> 개인정보 수집 이용동의(필수) </li>
-                <li> <input type="checkbox" name="m_check2"> 이용약관(필수) </li>
-                <li> <input type="checkbox" name="m_check3"> 마케팅 활용 및 광고성 정보 수신동의 </li>
-    
+                <li> <input type="checkbox" name="m_check2"> 테슬라코리아 이용약관(필수) </li>
+         
             </ul>
         </div>
       

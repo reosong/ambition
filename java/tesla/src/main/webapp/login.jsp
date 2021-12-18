@@ -11,7 +11,7 @@
 <body>
 
   <div id="div_login">
-        <div id="div_login2"> <b>T E S L A</b> </div>
+        <a href="index.jsp"><div id="div_login2"> <b>T E S L A</b> </div></a>
         <div id="div_member"> 로그인</div>
         <div id="div_id"> 
             <input type="text" id="input_id" placeholder="아이디를 입력하세요 ">
@@ -25,7 +25,7 @@
 
         </div>
         <div style="margin-top: 15px;">
-            <a href="member.jsp" style="text-decoration: none; color: black;"> 회원가입 </a>
+            <a href="member.jsp" style="text-decoration: none; color: white;"> 회원가입 </a>
         </div>
     </div>
 

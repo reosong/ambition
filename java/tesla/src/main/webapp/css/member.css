@@ -7,7 +7,7 @@ margin-left: 30%;
 width: 500px;
 
 height: 1000px;
-background-color: white;
+background-color: black;
 }
 #div_login2{
 padding-top: 30px;
@@ -15,6 +15,7 @@ padding-bottom: 20px;
 font-size: 30px;
  border-bottom: 1px solid lightgray;
  font-family: 'te';
+ color: white;
 }
 @font-face {
 src : url("../css/TESLA.ttf"); 
@@ -25,6 +26,7 @@ height: 40px;
 margin-top: 30px;
 font-size: 20px;
 border-bottom: 1px solid rgb(11, 11, 11);
+color: white;
 }
 #div_id{
 width: 500px;
@@ -36,6 +38,7 @@ margin-top: 20px;
 #div_password{
 width: 500px;
 height: 170px;
+color: white;
 
 text-align: center;
 margin-top: 20px;
@@ -58,6 +61,7 @@ border-radius: 30px;
 .ul_left{
 list-style: none;
 text-align: left;
+color: white;
 }
 
 .li_margin{
@@ -77,7 +81,7 @@ width: 400px;
 height: 50px;
 text-align: center;
 margin-top: 10px;
-background-color: rgb(124, 212, 250);
+background-color: rgb(0, 110, 255);
 border-radius: 30px;
 }
 
