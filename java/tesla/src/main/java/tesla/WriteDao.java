@@ -167,7 +167,7 @@ public class WriteDao {
 		Write write = new Write();
 		
 		try {
-			String sql = "select title, content from telsadata where number =?";
+			String sql = "select title, content from tesladata where number =?";
 			
 			PreparedStatement stmt = con.prepareStatement(sql);
 			stmt.setInt(1, number);
@@ -176,7 +176,7 @@ public class WriteDao {
 			while(rs.next()) {
 			write.setTitle(rs.getString(1));
 			write.setContent(rs.getString(2));
-			
+		
 			}return write;
 			
 		}catch(Exception e){
@@ -189,12 +189,66 @@ public class WriteDao {
 	
 	
 	
+	public int correction(String title, String content, int number) {
+		try {
+			String sql = "update tesladata set title= ?, content = ? where number = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			System.out.println(title);
+			System.out.println(content);
+			System.out.println(number);
+			stmt.setString(1,title);
+			stmt.setString(2, content);
+			stmt.setInt(3, number);
+			
+			int result = stmt.executeUpdate();
+			
+			return result;
+		}catch(Exception e) {
+		e.printStackTrace();
+	}
+		return 0;
+	}
 	
+	public String confirm(int number) {
+		try {
+			String sql = "select userID from tesladata where number =? ";
+			
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, number);
+			
+			rs = stmt.executeQuery();
+			
+			while(rs.next()) {
+				String result = rs.getString(1);
+				
+				return result;
+			}
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		return null;
+	}
 	
-	
-	
-	
-	
+	public int delete(int number) {
+		try {
+			String sql = "update tesladata set ok = 0 where number = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, number);
+			
+			
+			return stmt.executeUpdate();	
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		return -1;
+	}
 	
 	
 	

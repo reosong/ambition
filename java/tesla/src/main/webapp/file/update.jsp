@@ -30,9 +30,7 @@
 		int number= 0;
 		if(request.getParameter("number") != null){
 			number = Integer.parseInt(request.getParameter("number"));
-			out.println("<script>");
-			out.println("alert(number)");
-			out.println("</script>");
+		
 		}
 
       
@@ -47,7 +45,7 @@
 
         <div class="jumbotron">
             <div class="container">
-                <form action="writeAction.jsp" method="post" class="form-horizontal">
+                <form action="updateAction.jsp?number=<%=number%>" method="post" class="form-horizontal">
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">제목</label>
                         <div class="col-sm-10">
@@ -56,7 +54,7 @@
                     </div>
                     <label for="" class="col-sm-2 control-label"> 게시글</label>
                     <div class="col-sm-offset-2 col-sm-10">
-                    <textarea name="content" class="form-control"  rows="10" value="<%=write.getContent()%>"></textarea>
+                    <textarea name="content" class="form-control"  rows="10" "><%=write.getContent()%></textarea>
                 
             </div>
         </div>
