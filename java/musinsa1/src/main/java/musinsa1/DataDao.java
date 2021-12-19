@@ -108,6 +108,9 @@ public class DataDao {
 		return arr;
 	}
 	
+	
+	
+	
 	public ArrayList<Data> content(int count) {
 		ArrayList<Data> arr = new ArrayList<Data>();
 		

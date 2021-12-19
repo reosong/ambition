@@ -42,6 +42,27 @@ public class UserDao {
 	}
 	
 	
+	public int login(String userID, String userPassword) { //로그인하는 내용을 디비로 보냄 
+		String sql = "select userPassword from teslauser where userID = ?";
+		try {
+			
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, userID);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				if(rs.getString(1).equals(userPassword))
+					return 1;
+				else
+					return 0;
+		 	}
+			return -1;
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -2;
+	}
+
 	
 	
 	

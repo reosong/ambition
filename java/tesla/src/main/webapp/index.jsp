@@ -43,10 +43,14 @@
             <div id="menu_shop">
                 <ul>
                     
-                    <li class="menu_shop_li"><a href="./file/costomer.html">고객센터</a></li>
-                    <li class="menu_shop_li"><a href="./login.jsp">계정</a></li>
-                   
-                    
+                    <li class="menu_shop_li"><a href="./file/costomer.jsp">고객센터</a></li>
+                
+                <% if(session.getAttribute("userID") != null){
+                %>
+                    <li class="menu_shop_li"><a href="./logout.jsp">로그아웃</a></li>
+                <%} else{ %>
+               		 <li class="menu_shop_li"><a href="./login.jsp">계정</a></li>
+                  <%} %>  
                    
                  
 

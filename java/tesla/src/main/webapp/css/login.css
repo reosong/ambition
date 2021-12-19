@@ -22,14 +22,14 @@ margin-top: 30px;
 font-size: 20px;
 border-bottom: 1px solid lightgray;
 }
-#div_id{
+.div_id{
 width: 500px;
 height: 60px;
 
 text-align: center;
 margin-top: 20px;
 }
-#div_password{
+.div_password{
 width: 500px;
 height: 60px;
 
@@ -53,7 +53,7 @@ width: 500px;
 height: 60px;
 
 text-align: center;
-margin-top: 20px;
+margin-top: 50px;
 
 }
 #button_login{
