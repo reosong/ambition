@@ -107,10 +107,10 @@
 
             <div class="butt">
                 <p style="margin-left: 40%; font-weight: bold;">후륜구동</p>
-                <input type="botton" value="Standard Range" class="button1" style="margin-top: 0%;">
+                <button type="submit" value="Standard Range" class="button1" style="margin-top: 0%;">Standard Range</button>
                 <p style="margin-left: 35%; font-weight: bold; margin-top: 10%;" >듀얼 모터 (AWD)</p>
-                <input type="botton" value="Long Range " class="button1" style="margin-top: 0%;">
-                <input type="botton" value="Performance " class="button1" style="margin-top: 3%;">
+               <button type="submit" value="Long Range " class="button1" style="margin-top: 0%;">Long Range</button>
+               <button type="submit" value="Performance " class="button1" style="margin-top: 3%;">Performance </button>
             </div>
 
             <div class="model2" style="margin-top: 30%;">색 상</div>

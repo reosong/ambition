@@ -13,10 +13,33 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% 
-out.println("<script>");
-out.println("alert(title+content)");
-out.println("</script>");
-%>
+
+
+
+
+    <script type="text/JavaScript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script type="text/JavaScript">
+   
+        function self_introduction($name, $email) {
+            jQuery('#name_text').val($name);
+            
+        }
+    </script>
+
+<form action="test2.jsp?id=" method="post" scope="page">
+    <input type = "hidden" id = "nic_name" value = "ㄸ" />
+    
+    
+    <input type = "text" id = "name_text" value = ""/>
+    
+
+    <input type = "button" onClick = "self_introduction(this.value)" value = "Click" />
+
+<input type ="submit">
+</form>
+	
+
+
+
 </body>
 </html>
