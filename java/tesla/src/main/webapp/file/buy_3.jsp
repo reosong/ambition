@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@
     <main>
         <nav id="menu">
 
-            <div id="logo"><a href="../index.html"> T E S L A</a></div>
+            <div id="logo"><a href="../index.jsp"> T E S L A</a></div>
 
             <div class="clear"></div>
 
@@ -45,28 +47,28 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img style="width: 100%; height: 100vh;" src="../img/y1.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/35.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y2.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/36.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y3.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/37.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y4.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/38.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y5.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/31.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y6.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/32.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y7.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/33.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y8.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/34.png">
                     </div>
 
                 </div>
@@ -89,23 +91,26 @@
     <form action="">
     <section class="side_session" style=" margin-top: 4%;">
         <div>
-            <div class="model">Model Y</div>
+            <div class="model">Model 3</div>
 
             <div style="margin-top: 20%;">
                 <ul class="low">
-                    <li>448km</li>
+                    <li>383km</li>
                     <li>주행가능거리</li>
                 </ul>
                 <ul class="low">
-                    <li>250km/h</li>
+                    <li>225km/h</li>
                     <li>최고속도</li>
                 </ul>
                
             </div>
 
             <div class="butt">
-                <input type="botton" value="Long Range 70,000" class="button1">
-                <input type="botton" value="Performance 90,000" class="button1" style="margin-top: 10%;">
+                <p style="margin-left: 40%; font-weight: bold;">후륜구동</p>
+                <input type="botton" value="Standard Range" class="button1" style="margin-top: 0%;">
+                <p style="margin-left: 35%; font-weight: bold; margin-top: 10%;" >듀얼 모터 (AWD)</p>
+                <input type="botton" value="Long Range " class="button1" style="margin-top: 0%;">
+                <input type="botton" value="Performance " class="button1" style="margin-top: 3%;">
             </div>
 
             <div class="model2" style="margin-top: 30%;">색 상</div>
@@ -140,6 +145,7 @@
 
         </div>
 
+    
 
 
     <div class="clear"></div>
@@ -171,16 +177,12 @@
             <div class="model2" style="margin-top: 40%;">인테리어</div>
 
             <ul class="color_ul">
-                <li class="color_li2">
+                <li class="color_li2" style="margin-left: 40%;">
                     <div>
                         <button class="radius"><img class="button_size2" src="../img/ui_swat_int_in3pb.png" alt=""></button>
                     </div>
                 </li>
-                <li class="color_li2">
-                    <div>
-                        <button class="radius"><img class="button_size2" src="../img/ui_swat_int_white.png" alt=""></button>
-                    </div>
-                </li>
+               
             </ul>
 
         </div>
@@ -191,6 +193,7 @@
 
 
    
+
     <div class="clear"></div>
 
     
@@ -198,7 +201,7 @@
 
 
 
- 
+
         <div>
             <div class="model2" style="margin-top: 40%;">시트구성</div>
 
@@ -220,12 +223,15 @@
 
 
 
+  
+
 
     <div class="clear"></div>
 
     
 
 
+    
         <div style="width: 70%; margin-left: 15%; margin-top: 10%;">
 
 

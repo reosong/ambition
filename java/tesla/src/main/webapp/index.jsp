@@ -80,7 +80,7 @@
              <div class="title">Model Y</div>
          
              <div class="button1">
-                <a href="./file/buy_y.html"> <input class="btn1" type="button" value="주문하기"></a>
+                <a href="./file/buy_y.jsp"> <input class="btn1" type="button" value="주문하기"></a>
                 <a href="./file/modely.html">  <input class="btn2" type="button" value="자세히 알아보기"></a>
                 </div>
             
@@ -94,7 +94,7 @@
         <div class="title">Model 3</div>
     
         <div class="button1">
-            <a href="./file/buy_3.html"><input class="btn1" type="button" value="주문하기"></a> 
+            <a href="./file/buy_3.jsp"><input class="btn1" type="button" value="주문하기"></a> 
             <a href="./file/model3.html"> <input class="btn2" type="button" value="자세히 알아보기"></a>
            </div>
        
@@ -107,7 +107,7 @@
     <div class="title">Model X</div>
 
     <div class="button1">
-        <a href="./file/buy_x.html"> <input class="btn1" type="button" value="주문하기"></a>
+        <a href="./file/buy_x.jsp"> <input class="btn1" type="button" value="주문하기"></a>
         <a href="./file/modelx.html"> <input class="btn2" type="button" value="자세히 알아보기"></a>
        </div>
    
@@ -118,7 +118,7 @@
 
     <div class="button1">
   
-        <a href="./file/models.html"> <input class="btn1" type="button" value="주문하기" ></a>
+        <a href="./file/models.jsp"> <input class="btn1" type="button" value="주문하기" ></a>
         <a href="./file/models.html"> <input class="btn2" type="button" value="자세히 알아보기"></a>
        </div>
    

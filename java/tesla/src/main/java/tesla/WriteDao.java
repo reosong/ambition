@@ -95,7 +95,7 @@ public class WriteDao {
 		
 		
 		try {
-			String sql = "select number, title, userID, date from tesladata order by number desc";
+			String sql = "select number, title, userID, date from tesladata where ok = 1 order by number desc";
 			PreparedStatement stmt = con.prepareStatement(sql);
 			
 			rs = stmt.executeQuery();

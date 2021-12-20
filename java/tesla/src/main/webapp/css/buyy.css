@@ -99,6 +99,21 @@ display: inline-block;
     text-align: center;
   
 }
+.button1{
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    border: 2px solid blue;
+  
+ 
+}
+.bb{
+	width:900px
+}
 .clicked {
     color: blue;
   }

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@
     <main>
         <nav id="menu">
 
-            <div id="logo"><a href="../index.html"> T E S L A</a></div>
+            <div id="logo"><a href="../index.jsp"> T E S L A</a></div>
 
             <div class="clear"></div>
 
@@ -45,28 +47,28 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img style="width: 100%; height: 100vh;" src="../img/s7.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y1.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/s6.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y2.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/s1.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y3.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/s4.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y4.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/s5.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y5.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/s3.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y6.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/s2.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y7.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/s8.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y8.png">
                     </div>
 
                 </div>
@@ -89,11 +91,11 @@
     <form action="">
     <section class="side_session" style=" margin-top: 4%;">
         <div>
-            <div class="model">Model S</div>
+            <div class="model">Model Y</div>
 
             <div style="margin-top: 20%;">
                 <ul class="low">
-                    <li>652km</li>
+                    <li>448km</li>
                     <li>주행가능거리</li>
                 </ul>
                 <ul class="low">
@@ -102,20 +104,40 @@
                 </ul>
                
             </div>
+            
+           <script>
+           function model(this.value) {
+        	   var model =  value;
+        	
+        		   return model;
+        	  
+           }
+           function send{
+        	   model(this.value)
+        	   
+           }
+           
+           
+           </script>
+            
+           
+            <input type="radio" value ="long" name= "model">
+            <input type="radio" value ="per" name= "model">
+         
 
             <div class="butt">
-                <p style="margin-left: 40%; font-weight: bold;">듀얼 모터</p>
-                <input type="botton" value="Model S" class="button1" style="margin-top: 0%;">
-                <p style="margin-left: 40%; font-weight: bold; margin-top: 10%;" >트라이 모터</p>
-                <input type="botton" value="Model S Palid " class="button1" style="margin-top: 0%;">
+           
+              <button type="button"  value="Long Range" class="button1" onclick="model"><input type="radio" value ="long" name= "model"></button>
+      
+              <button type="button"class="button1"  value="Performence" onclick="model" style="margin-top: 10%;">Performance 90,000</button>
             </div>
-
+<input type="radio" value ="per" name= "model">
             <div class="model2" style="margin-top: 30%;">색 상</div>
 
             <ul class="color_ul">
                 <li class="color_li">
                     <div>
-                        <button class="radius"><img class="button_size" src="../img/Paint_Black.png" alt=""></button>
+                        <button class="radius" type= "button"><img class="button_size" src="../img/Paint_Black.png" alt=""></button>
                     </div>
                 </li>
                 <li class="color_li">
@@ -143,10 +165,11 @@
         </div>
 
 
+
     <div class="clear"></div>
 
 
-  
+    
         <div>
             <div class="model2" style="margin-top: 40%;">휠</div>
 
@@ -172,19 +195,14 @@
             <div class="model2" style="margin-top: 40%;">인테리어</div>
 
             <ul class="color_ul">
-                <li class="color_li2" style="margin-left: 10%;">
+                <li class="color_li2">
                     <div>
                         <button class="radius"><img class="button_size2" src="../img/ui_swat_int_in3pb.png" alt=""></button>
                     </div>
                 </li>
-                <li class="color_li2" style="margin-left: 10%;">
+                <li class="color_li2">
                     <div>
                         <button class="radius"><img class="button_size2" src="../img/ui_swat_int_white.png" alt=""></button>
-                    </div>
-                </li>
-                <li class="color_li2"style="margin-left: 10%;">
-                    <div>
-                        <button class="radius"><img class="button_size2" src="../img/Interior_Cream.png" alt=""></button>
                     </div>
                 </li>
             </ul>
@@ -196,8 +214,7 @@
 
 
 
-    
-
+   
     <div class="clear"></div>
 
     
@@ -205,7 +222,7 @@
 
 
 
-    
+ 
         <div>
             <div class="model2" style="margin-top: 40%;">시트구성</div>
 
@@ -226,8 +243,6 @@
 
 
 
-
-    
 
 
     <div class="clear"></div>
