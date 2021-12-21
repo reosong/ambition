@@ -6,6 +6,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="계정"/>
 			<item value="login"/>
 			<item value="count"/>
 			<item value="bbsID"/>
@@ -13,7 +14,6 @@
 			<item value="bbi"/>
 			<item value=".dropdown-menu "/>
 			<item value="drop-downmenu"/>
-			<item value=".active"/>
 		</list>
 		<list key="replacehistory">
 		</list>

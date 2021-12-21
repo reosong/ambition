@@ -6,10 +6,11 @@
 		<item key="DIALOG_WIDTH" value="305"/>
 		<item key="DIALOG_HEIGHT" value="413"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
-		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.debug.ui.ModuleView"/>
+		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.ui.views.ProgressView"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="Debug"/>
-			<item value="XML"/>
+			<item value="General"/>
+			<item value="Java Browsing"/>
+			<item value="Web Services"/>
 		</list>
 	</section>
 </section>

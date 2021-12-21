@@ -54,9 +54,9 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/song-yeongseo/Desktop/htmlfile/tesla/img"/>
 			<item value="/Users/song-yeongseo/Desktop/htmlfile/tesla/file"/>
 			<item value="/Users/song-yeongseo/Desktop/htmlfile/tesla/css"/>
-			<item value="/Users/song-yeongseo/Desktop/htmlfile/tesla/img"/>
 			<item value="/Users/song-yeongseo/Desktop/htmlfile/tesla/js"/>
 		</list>
 	</section>
