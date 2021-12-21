@@ -1,10 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Cars</title>
+     <title>Electric Cars</title>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
     <link rel="stylesheet" href="../css/model3.css">
     <script src="../css/tesla.js"></script>
     <script src ="../css/menu.js"></script>
@@ -13,18 +16,25 @@
         
 </head>
 <body>
+<% 
+String userID = null;
+		if(session.getAttribute("userID") != null){
+			userID = (String)session.getAttribute("userID");
+		}
+		
+%>
     <main>
         <nav id="menu">
 
-            <div id="logo"><a href="../index.html"> T E S L A</a></div>
+            <div id="logo"><a href="../index.jsp"> T E S L A</a></div>
 
 
             <div id="menu_name">
                 <ul>
-                    <li><a href = "./models.html">Model S</a></li>
-                    <li><a href = "./model3.html">Model 3</a></li>
-                    <li><a href = "./modelx.html">Model X</a></li>
-                    <li><a href = "./modely.html">Model Y</a></li>
+					 <li><a href = "./models.jsp">Model S</a></li>
+                    <li><a href = "./model3.jsp">Model 3</a></li>
+                    <li><a href = "./modelx.jsp">Model X</a></li>
+                    <li><a href = "./modely.jsp">Model Y</a></li>
                     <li><a href = "./cyber.html">CyberTruck</a></li>
                     <li><a href = "./super.html">Super Charger</a></li>
                 </ul>
@@ -34,7 +44,13 @@
                 <ul>
                    
                    <li class="menu_shop_li"><a href="costomer.jsp">고객센터</a></li>
-                    <li class="menu_shop_li"><a href="../login.jsp">계정</a></li>
+                  	<% if(session.getAttribute("userID") != null){
+                %>
+                    <li class="menu_shop_li"><a href="./logout.jsp">로그아웃</a></li>
+                <%} else{ %>
+               		 <li class="menu_shop_li"><a href="./login.jsp">계정</a></li>
+                  <%} %>  
+   
    
                 </ul>
             </div>

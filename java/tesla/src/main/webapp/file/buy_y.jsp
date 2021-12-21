@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주문하기</title>
+     <title>Electric Cars</title>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
     <link rel="stylesheet" href="../css/buyy.css">
     <link rel = "stylesheet" href="../css/bootstrap.css">
     <script src ="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -15,6 +16,23 @@
     
 </head>
 <body>
+<% 
+String userID = null;
+		if(session.getAttribute("userID") != null){
+			userID = (String)session.getAttribute("userID");
+		}
+if(userID == null){
+			
+			out.println("<script>");
+			out.println("alert('로그인해주세요')");
+			out.println("location.href ='../login.jsp'");
+			out.println("</script>");
+			
+		}
+		
+%>
+
+
     <main>
         <nav id="menu">
 
@@ -59,7 +77,7 @@
                         <img style="width: 100%; height: 100vh;" src="../img/y4.png">
                     </div>
                     <div class="item">
-                        <img style="width: 100%; height: 100vh;" src="../img/y5.png">
+                        <img style="width: 100%; height: 100vh;" src="../img/y_5.png">
                     </div>
                     <div class="item">
                         <img style="width: 100%; height: 100vh;" src="../img/y6.png">
@@ -88,7 +106,8 @@
 
 
 
-    <form action="">
+ <!-- 사이드 메뉴  -->
+   <form action="confirm_y.jsp" method ="post">
     <section class="side_session" style=" margin-top: 4%;">
         <div>
             <div class="model">Model Y</div>
@@ -105,33 +124,16 @@
                
             </div>
             
-           <script>
-           function model(this.value) {
-        	   var model =  value;
-        	
-        		   return model;
-        	  
-           }
-           function send{
-        	   model(this.value)
-        	   
-           }
+       
            
-           
-           </script>
-            
-           
-            <input type="radio" value ="long" name= "model">
-            <input type="radio" value ="per" name= "model">
-         
-
+      
             <div class="butt">
            
-              <button type="button"  value="Long Range" class="button1" onclick="model"><input type="radio" value ="long" name= "model"></button>
+              <button type="button"  value="Long Range" class="button1" onclick="model">Long Range</button>
       
-              <button type="button"class="button1"  value="Performence" onclick="model" style="margin-top: 10%;">Performance 90,000</button>
+              <button type="button"class="button1"  value="Performence" onclick="model" style="margin-top: 10%;">Performance</button>
             </div>
-<input type="radio" value ="per" name= "model">
+
             <div class="model2" style="margin-top: 30%;">색 상</div>
 
             <ul class="color_ul">

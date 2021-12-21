@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
   <title>Electric Cars</title>
-  
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./css/tesla.css">
     <script src="./css/tesla.js"></script>
     <script src ="css/menu.js"></script>
@@ -30,10 +30,10 @@
 
             <div id="menu_name">
                 <ul>
-                    <li><a href = "./file/models.html">Model S</a></li>
-                    <li><a href = "./file/model3.html">Model 3</a></li>
-                    <li><a href = "./file/modelx.html">Model X</a></li>
-                    <li><a href = "./file/modely.html">Model Y</a></li>
+                    <li><a href = "./file/models.jsp">Model S</a></li>
+                    <li><a href = "./file/model3.jsp">Model 3</a></li>
+                    <li><a href = "./file/modelx.jsp">Model X</a></li>
+                    <li><a href = "./file/modely.jsp">Model Y</a></li>
                     <li><a href = "./file/cyber.html">CyberTruck</a></li>
                     <li><a href = "./file/super.html">Super Charger</a></li>
                 </ul>
@@ -42,14 +42,14 @@
 
             <div id="menu_shop">
                 <ul>
-                    
+       
                     <li class="menu_shop_li"><a href="./file/costomer.jsp">고객센터</a></li>
                 
                 <% if(session.getAttribute("userID") != null){
                 %>
                     <li class="menu_shop_li"><a href="./logout.jsp">로그아웃</a></li>
                 <%} else{ %>
-               		 <li class="menu_shop_li"><a href="./login.jsp">계정</a></li>
+               		 <li class="menu_shop_li"><a href="./login.jsp">계</a></li>
                   <%} %>  
                    
                  
@@ -81,7 +81,7 @@
          
              <div class="button1">
                 <a href="./file/buy_y.jsp"> <input class="btn1" type="button" value="주문하기"></a>
-                <a href="./file/modely.html">  <input class="btn2" type="button" value="자세히 알아보기"></a>
+                <a href="./file/modely.jsp">  <input class="btn2" type="button" value="자세히 알아보기"></a>
                 </div>
             
         
@@ -95,7 +95,7 @@
     
         <div class="button1">
             <a href="./file/buy_3.jsp"><input class="btn1" type="button" value="주문하기"></a> 
-            <a href="./file/model3.html"> <input class="btn2" type="button" value="자세히 알아보기"></a>
+            <a href="./file/model3.jsp"> <input class="btn2" type="button" value="자세히 알아보기"></a>
            </div>
        
    
@@ -108,7 +108,7 @@
 
     <div class="button1">
         <a href="./file/buy_x.jsp"> <input class="btn1" type="button" value="주문하기"></a>
-        <a href="./file/modelx.html"> <input class="btn2" type="button" value="자세히 알아보기"></a>
+        <a href="./file/modelx.jsp"> <input class="btn2" type="button" value="자세히 알아보기"></a>
        </div>
    
 
@@ -119,7 +119,7 @@
     <div class="button1">
   
         <a href="./file/models.jsp"> <input class="btn1" type="button" value="주문하기" ></a>
-        <a href="./file/models.html"> <input class="btn2" type="button" value="자세히 알아보기"></a>
+        <a href="./file/models.jsp"> <input class="btn2" type="button" value="자세히 알아보기"></a>
        </div>
    
 

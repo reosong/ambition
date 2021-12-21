@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+     <%@page import = "tesla.UserDao" %>
+    <jsp:useBean id="order" class ="tesla.Order" scope="page"/>
+    <jsp:setProperty property="color" name="order"/>
+  
 <html>
 <head>
 <meta charset="UTF-8">
@@ -9,12 +12,12 @@
 <body>
 
 <%
-	String  a =  request.getParameter("nic_text"); 
-	out.println("<script>");
-	out.println("alert(a))");
+	String  a =  order.getColor();
+	String b = request.getParameter("color");
 	
-	out.println("</script>");
 System.out.println(a);
+System.out.println(b);
+System.out.println("----------");
 	%>
 
 

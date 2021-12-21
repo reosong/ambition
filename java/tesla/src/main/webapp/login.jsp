@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-
+  <title>Electric Cars</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
 <link rel="stylesheet" href="css/login.css">
 </head>
 
