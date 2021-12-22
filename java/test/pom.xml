@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>spring</groupId>
-  <artifactId>testProject</artifactId>
+  <groupId>Spring</groupId>
+  <artifactId>test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
-	<dependencies>
+  
+  	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -24,16 +24,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	
-	
-	
 	</build>
-	<properties>
-		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-	</properties>
-
-
-
-
+	
 </project>
