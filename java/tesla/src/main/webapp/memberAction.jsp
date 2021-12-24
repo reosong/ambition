@@ -33,7 +33,7 @@ if(user.getUserID()==null || user.getUserPassword() == null ||
 		session.setAttribute("userID", user.getUserID());
 		out.println("<script>");
 		out.println("alert('회원가입이 완료되었습니다')");
-		out.println("location.href =main.jsp");
+		out.println("location.href =index.jsp");
 		out.println("</script>");
 	}else{
 		out.println("<script>");

@@ -4,16 +4,15 @@ import java.sql.*;
 import java.util.*;
 
 public class WriteDao {
-	/*
-	private int number;
-	private String title;
-	private String content;
-	private String userID;
-	private String date;
-	private int ok;
-	*/
+
+	
 	Connection con = null;
 	ResultSet rs = null;
+	
+	
+	int listNum = 10;
+	
+	int pageCount;
 	
 	
 	public WriteDao() {
@@ -90,7 +89,7 @@ public class WriteDao {
 	}
 	
 	//게시글의 리스트를 보여준다 
-	public ArrayList<Write> show() {
+	public ArrayList<Write> show(int pageNum) {
 		ArrayList<Write> arr = new ArrayList<Write>();
 		
 		
@@ -120,6 +119,7 @@ public class WriteDao {
 		return arr;
 	}
 	
+	
 	public Write getWrite(int number) {
 		Write write = new Write();
 		try {
@@ -143,6 +143,7 @@ public class WriteDao {
 	}
 	
 	
+	
 	public ArrayList<Write> showContent(int number){
 		ArrayList<Write> arr = new ArrayList<Write>();
 		try {
@@ -163,6 +164,7 @@ public class WriteDao {
 		
 	}
 
+	//수정하기 눌러서 원본보여주기 
 	public Write update(int number){
 		Write write = new Write();
 		
@@ -188,7 +190,7 @@ public class WriteDao {
 	}
 	
 	
-	
+	//수정해서 업데이트 
 	public int correction(String title, String content, int number) {
 		try {
 			String sql = "update tesladata set title= ?, content = ? where number = ?";
@@ -208,6 +210,8 @@ public class WriteDao {
 	}
 		return 0;
 	}
+	
+	
 	
 	public String confirm(int number) {
 		try {
@@ -234,6 +238,7 @@ public class WriteDao {
 		return null;
 	}
 	
+	//삭제 하는 메소드 
 	public int delete(int number) {
 		try {
 			String sql = "update tesladata set ok = 0 where number = ?";
@@ -252,6 +257,63 @@ public class WriteDao {
 	
 	
 	
+	
+	int pageNum =0;
+	
+	//페이징 처리 메소드 
+	public int page() {
+		
+		WriteDao writeDao = new WriteDao();
+		
+		 pageCount= writeDao.count();
+		pageNum = pageCount%10 +1;
+		
+		return pageNum;
+		
+	}
+	/*
+	컬럼의 수/보여줄 게시글 수 나누기 +1
+	for문으로 만들기(count++)
+	
+	2번을 누르면 컬럼 위에서 11번째부터 20번째까지 출력 
+	3번을 누르면 컬럼 위에서 21번째부터 30번
+	마지막while rs.next()
+	*/
+	
+	
+	
+	
+	
+	/*
+	 * 
+	 * int listNum = 10;
+	int firstPage =1;
+	int lastPage;
+	int count;
+	*/
+	
+	
+	//로우카운트
+	public int count() {
+		try {
+		String sql = "select count(*) from tesladata where ok = 1";
+		
+		PreparedStatement stmt = con.prepareStatement(sql);
+		
+		rs = stmt.executeQuery();
+		
+		while(rs.next()) {
+			pageCount = rs.getInt(1);
+		}
+		
+		
+		return pageCount;
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
 	
 	
 	

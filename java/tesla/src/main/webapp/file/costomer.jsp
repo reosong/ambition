@@ -4,6 +4,9 @@
      <%@ page import="tesla.Write"%>
      <%@ page import ="java.sql.*" %>
     <%@ page import ="java.util.*" %>
+    <jsp:useBean id="data" class="tesla.Write"/>
+    <jsp:setProperty name ="data" property ="page"/>
+    
     
 <!DOCTYPE html>
 <html lang="en">
@@ -48,8 +51,9 @@
                    
                    <tbody>
                    <% 
+                   int a = data.getPage();
                    WriteDao writeDao= new WriteDao();
-                   ArrayList<Write> write = writeDao.show();
+                   ArrayList<Write> write = writeDao.show(a);
                    	for(int i =0; i<write.size();i++){
                    	
                    %>
@@ -70,6 +74,32 @@
                </table>
            </div>
        </div>
+       
+      <div style="width: 100%; text-align: center; ">
+      
+      
+      
+        <ul style ="display:inline-block;">
+      <%
+     
+    
+      int num = writeDao.page();
+      for(int i =1 ; i<=num ; i++){
+ 
+   %>
+		
+			<li style="list-style: none;"> <%=i %></li>
+			
+ 
+    	  <%
+      }
+      
+      %>
+       <div style="clear: both;"></div>
+      </ul>
+ 
+      
+      </div>
 
        <div class="container">
            <form action="write.jsp" method="post" class="navbar-form navbar-right">

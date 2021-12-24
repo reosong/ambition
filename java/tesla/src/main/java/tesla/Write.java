@@ -8,6 +8,8 @@ public class Write {
 	private String userID;
 	private String date;
 	private int ok;
+	private int page;
+	
 	public int getNumber() {
 		return number;
 	}
@@ -43,6 +45,12 @@ public class Write {
 	}
 	public void setOk(int ok) {
 		this.ok = ok;
+	}
+	public int getPage() {
+		return page;
+	}
+	public void setPage(int page) {
+		this.page = page;
 	}
 	
 	

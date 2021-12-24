@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +32,7 @@
         <br>
         <div id="div_password"> 
             <ul class="ul_left">
-                <li> 비밀번호</li>
+                <li>비밀번호</li>
                 <li class="li_margin"><input type="password" name="userPassword" id="input_password" ></li>
                 <li><input type="password" id="input_password" name ="userPasswordok"placeholder="비밀번호 확인 "></li>
             </ul>
@@ -44,14 +45,13 @@
         </div>
         <div>
              <ul class="ul_left">
-                <li> <input type="checkbox" name="m_check1"> 개인정보 수집 이용동의(필수) </li>
+                <li> <input type="checkbox" name="m_check1"> 개인정보 제공 동의 (필수)</li>
                 <li> <input type="checkbox" name="m_check2"> 테슬라코리아 이용약관(필수) </li>
-         
             </ul>
         </div>
       
         <div>
-            <input type="submit" id="input_submit" value="회원 가입">
+            <input type="submit" id="input_submit" value="로그인 ">
         </div>
 
 
