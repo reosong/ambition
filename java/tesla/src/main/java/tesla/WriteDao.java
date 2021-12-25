@@ -127,12 +127,18 @@ public class WriteDao {
 			PreparedStatement stmt =con.prepareStatement(sql);
 			stmt.setInt(1, number);
 			
+			
+			int sum =0;
+			
 			rs =stmt.executeQuery();
 			while(rs.next()) {
+			if(sum <9) {
 			write.setUserID(rs.getString(1));
 			write.setTitle(rs.getString(2));
 			write.setDate(rs.getString(3));
 			write.setContent(rs.getString(4));
+			sum++;
+			}
 			}
 		return write;
 			
