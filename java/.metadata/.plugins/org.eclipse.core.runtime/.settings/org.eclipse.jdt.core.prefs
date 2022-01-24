@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ASPECTJRT_LIB=/Users/song-yeongseo/.eclipse/org.eclipse.platform_4.20.0_1231987628_macosx_cocoa_x86_64/plugins/org.aspectj.runtime_1.9.6.202103162301.jar
 org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/Volumes/Eclipse/Eclipse.app/Contents/Eclipse/
 org.eclipse.jdt.core.classpathVariable.JRE_LIB=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/rt.jar
 org.eclipse.jdt.core.classpathVariable.JRE_SRC=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/src.zip

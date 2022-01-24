@@ -309,7 +309,11 @@ public class WriteDao {
 		rs = stmt.executeQuery();
 		
 		while(rs.next()) {
+		
 			pageCount = rs.getInt(1);
+			if(pageCount<10) {
+				return 1;
+			}
 		}
 		
 		

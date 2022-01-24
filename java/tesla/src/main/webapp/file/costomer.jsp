@@ -48,12 +48,12 @@
                    </thead>
                    
                    
-                   
+                   <!-- 질문리스트 보여주기 -->
                    <tbody>
                    <% 
                    int a = data.getPage();
                    WriteDao writeDao= new WriteDao();
-                   ArrayList<Write> write = writeDao.showPage(a);
+                   ArrayList<Write> write = writeDao.show(a);
                    	for(int i =0; i<write.size();i++){
                    	
                    %>
@@ -88,7 +88,7 @@
  
    %>
 		
-			<li style="list-style: none;"> <%=i %></li>
+			<li style="list-style: none" display="inline-bloc";> <%=i %></li>
 			
  
     	  <%
